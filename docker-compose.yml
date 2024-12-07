@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  soap-server:
+    build: .
+    container_name: soap-server
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
